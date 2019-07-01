@@ -27,7 +27,7 @@ def get_org():
 
 # Get billing information
 def get_billing():
-    url = "https://api.gandi.net:0/v5/billing/info/a8c260de-c114-11e7-b198-00163ec31f40"
+    url = "https://api.gandi.net:0/v5/billing/info/<sharing_id>"
     headers = {'authorization': 'Apikey <your api key>'}
     response = requests.request("GET", url, headers=headers)
     data = response.text
